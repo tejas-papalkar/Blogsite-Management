@@ -1,0 +1,15 @@
+.footerS {
+    height: 50px;
+    background-color: #680808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    margin-top: 30px;
+    border-right: 0px;
+    margin-left: -145px;
+    margin-right: -145px;
+    
+  }
+

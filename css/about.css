@@ -1,0 +1,46 @@
+
+.about-content {
+    font-size: 20px;
+}
+.about-right {
+    display: flex ;
+    align-items: top;
+    justify-content: center;
+  }
+.about-right img {
+    margin-left: 800px;
+    margin-top: -100px;
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 200px;
+  }
+.about-content p{
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    font-size: 20px; 
+  }
+  
+.form-input {
+    padding: 0px 5px;
+    padding-top: 3px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0 13px;
+    font-family: var(--font1);
+  }
+
+  
+  .form-box-submit{
+    width: 52vw;
+    padding: 0px 6px;
+    margin: 7px 0;
+    font-size: 18px;
+    font-family: var(--font1);
+    border: 2px solid var(--main-bg-color);
+      border-radius: 5px;
+  }
+ 

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/search.css">
+
+    <title>Search-WWW.NTRH™BLOGSITE.COM</title>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="img/newlogo.png" width="150px" alt=""></span>
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <input class="form-input" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for article">
+
+        </div>
+
+    </nav>
+
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto font2">
+
+
+
+
+
+        <ul id="myUL">
+            <li>
+                <a style="text-decoration: none" href="/blogpost.html">
+                    <h3>What is 5G | Everything You Need to Know About 5G </h3>
+
+                    <div class="home-article">
+                        <div class="home-article-img">
+                            <img src="img/article-5g.png" alt="article">
+                        </div>
+                        <div class="home-article-content font1">
+                            <a href="/blogpost.html">
+                                <!-- <h3>(Click Here To Open This Article)</h3> -->
+                            </a>
+
+                            <div> By : Harshal Ugale</div>
+                            <span>14 July | 11 min read</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a style="text-decoration: none" href="/blogpost_sport.html">
+                    <h3>Roger Federer Withdraws From Tokyo Olympics</h3>
+                    <div class="home-article">
+                        <div class="home-article-img">
+                            <img src="img/article-sport.png" alt="article">
+                        </div>
+                        <div class="home-article-content font1">
+                            <a href="/blogpost_sport.html">
+                                <!-- <h3>Roger Federer Withdraws From Tokyo Olympics</h3> -->
+                            </a>
+
+                            <div> By : Rushikesh Bhedodkar</div>
+                            <span>15 July | 6 min read</span>
+                        </div>
+                    </div>
+
+                </a>
+            </li>
+
+            <li>
+                <a style="text-decoration: none" href="/blogpost_a11.html">
+                    <h3>Review On Android 11 Operating System</h3>
+                    <div class="home-article">
+                        <div class="home-article-img">
+                            <img src="img/article-a11.png" alt="article">
+                        </div>
+                        <div class="home-article-content font1">
+                            <a href="/blogpost_a11.html">
+                                <!-- <h3> Review On Android 11 Operating System </h3> -->
+                            </a>
+
+                            <div> By : Tejas Papalkar</div>
+                            <span>12 July | 7 min read</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a style="text-decoration: none" href="/blogpost_win11.html">
+                    <h3>Windows 11 New Operating System For Computers Who Runs On Windows</h3>
+                    <div class="home-article">
+                        <div class="home-article-img">
+                            <img src="img/blogpost-win11.jpg" alt="article">
+                        </div>
+                        <div class="home-article-content font1">
+                            <a href="/blogpost_win11.html">
+                                <!-- <h3>Windows 11 New Operating System For Computers Who Runs On Windows</h3> -->
+                            </a>
+
+                            <div> By : Nutankumar Sahare</div>
+                            <span>14 July | 6 min read</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a style="text-decoration: none" href="/blogpost_covieshield.html">
+                    <h3>Covishield Vaccine And It's Side-Effects </h3>
+                    <div class="home-article">
+                        <div class="home-article-img">
+                            <img src="img/article-covishield.jpg" alt="article">
+                        </div>
+                        <div class="home-article-content font1">
+                            <a href="/blogpost_covieshield.html">
+                                <!-- <h3>Covishield Vaccine And It's Side-Effects </h3> -->
+                            </a>
+
+                            <div> By : Team NTRH</div>
+                            <span>16 July | 5 min read</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a style="text-decoration: none" href="/blogpost_lang.html">
+                    <h3>Programming Languages And Thier Variant</h3>
+                    <div class="home-article">
+                        <div class="home-article-img">
+                            <img src="img/article-lang.jpg" alt="article">
+                        </div>
+                        <div class="home-article-content font1">
+                            <a href="/blogpost_lang.html">
+                                <!-- <h3> Programming Languages And Thier Variant</h3> -->
+                            </a>
+
+                            <div>By : Team NTRH</div>
+                            <span>20 July | 8 min read</span>
+                        
+                        </div>
+
+
+                    </div>
+                </a>
+            </li>
+           
+
+        </ul>
+    </div>
+    
+
+</body>
+<script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+                
+            }
+        }
+    }
+</script>
+
+
+</html>
